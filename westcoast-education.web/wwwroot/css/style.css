@@ -1,0 +1,75 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background: var(--dark-color);
+    color: var(--light-color);
+    font-family: Geneva, sans-serif;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../img/laptop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.admin-overlay {
+    width: 100%;
+    /* background-color: rgba(255, 238, 0, 0.3) */
+    background-color: rgba(149, 101, 28, 0.352)
+}
+
+.hero-title {
+    font-size: 9vh;
+    align-self: center;
+    margin-left: 100px;
+    padding-bottom: 100px;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.page-title {
+    text-align: center;
+    font-weight: 900;
+}
+
+.text-primary {
+    color: var(--primary-text-color);
+}
+
+.hero h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#add-course-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,80 @@
+@{
+    ViewData["Title"] = "Lärarinformation";
+}
+@* @model IList<westcoast_education.web.ViewModels.CourseDetailsViewModel> *@
+@model westcoast_education.web.ViewModels.TeacherDetailsViewModel
+
+<section class="hero">
+    <div class="flex-container-column">
+        <h2>// @Model.Name</h2>
+        <div class="flex-object">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>&lt;Id&gt;</th>
+                        <th>&lt;Personnummer&gt;</th>
+                        <th>&lt;Namn&gt;</th>
+                        <th>&lt;Epost&gt;</th>
+                        <th>&lt;Address&gt;</th>
+                        <th>&lt;Telefonnummer&gt;</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>@Model.Id</td>
+                        <td>@Model.SocialSecurityNumber</td>
+                        <td>@Model.Name</td>
+                        <td>@Model.Email</td>
+                        <td>@Model.Address</td>
+                        <td>@Model.PhoneNumber</td>
+                        <td></td>
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <td>&nbsp;</td>
+                    <td>
+                        <a class="links" asp-action="index"><i id="arrow" class="fa-solid fa-arrow-left"></i></a>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="flex-object">
+            <h2>// @Model.Name/Kurser</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>&lt;Kursnamn&gt;</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var course in Model.Courses!)
+                    {
+                        <tr>
+                            <td></td>
+                            <td>@course.CourseName</td>
+                            <td></td>
+                        </tr>
+                    }
+                </tbody>
+                <tfoot>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/colors.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/navigation.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/tables.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/courses.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/style.css">
+    @RenderSection("styles", false)
+    <script src="https://kit.fontawesome.com/e25172af62.js" crossorigin="anonymous"></script>
+    <title>@ViewData["Title"] - Westcoast Education</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a asp-action="index" asp-controller="home">
+                <h1 class="logo"><span class="text-primary"><i class="fa-solid fa-laptop-code"></i> Westcoast
+                    </span>Education</h1>
+            </a>
+            <ul class="links">
+                <li><a asp-action="index" asp-controller="home">Hem</a></li>
+                <li><a asp-action="index" asp-controller="Courses">Kurser</a></li>
+                <li><a asp-action="index" asp-controller="Students">Studenter</a></li>
+                <li><a asp-action="index" asp-controller="Teachers">Lärare</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+</body>
+
+</html>

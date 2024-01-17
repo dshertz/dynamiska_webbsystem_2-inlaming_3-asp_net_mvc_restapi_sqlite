@@ -1,0 +1,50 @@
+@{
+    ViewData["Title"] = "Lägg till ny kurs";
+}
+@model westcoast_education.web.ViewModels.CoursePostViewModel
+
+<div class="form">
+    <section>
+        <h1>Lägg till kurs</h1>
+        <form asp-action="create" asp-controller="Courses" method="post">
+            <div>
+                <label asp-for="CourseName"></label>
+                <input asp-for="CourseName">
+                <span asp-validation-for="CourseName"></span>
+            </div>
+            <div>
+                <label asp-for="CourseTitle"></label>
+                <input asp-for="CourseTitle">
+                <span asp-validation-for="CourseTitle"></span>
+            </div>
+            <div>
+                <label asp-for="CourseNumber"></label>
+                <input asp-for="CourseNumber">
+                <span asp-validation-for="CourseNumber"></span>
+            </div>
+            <div>
+                <label asp-for="StartDate"></label>
+                <input asp-for="StartDate">
+                <span asp-validation-for="StartDate"></span>
+            </div>
+            <div>
+                <label asp-for="LengthInWeeks"></label>
+                <input asp-for="LengthInWeeks">
+                <span asp-validation-for="LengthInWeeks"></span>
+            </div>
+            <div>
+                <label asp-for="Teacher"></label>
+                <input asp-for="Teacher">
+                <span asp-validation-for="Teacher"></span>
+            </div>
+            <div>
+                <div>
+                    <button>
+                        <i>spara</i>
+                    </button>
+                    <a asp-action="index" asp-controller="Courses"><i>Avbryt</i></a>
+                </div>
+            </div>
+        </form>
+    </section>
+</div>

@@ -1,0 +1,37 @@
+@model IEnumerable<westcoast_education.web.ViewModels.TeacherListViewModel>
+@{
+    ViewData["Title"] = "Lärare";
+}
+
+<section class="hero">
+    <div>
+        <h2>// Alla Lärare</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>&lt;Namn&gt;</th>
+                    <th>&lt;Epost&gt;</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var teacher in Model)
+                {
+                    <tr>
+                        <td></td>
+                        <td><a class="links" asp-action="details" asp-route-teacherId="@teacher.Id">@teacher.Name</a></td>
+                        <td>@teacher.Email</td>
+                        <td></td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tfoot>
+        </table>
+    </div>
+</section>

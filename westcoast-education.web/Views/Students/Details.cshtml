@@ -1,0 +1,54 @@
+@{
+    ViewData["Title"] = "Studentinformation";
+}
+@model westcoast_education.web.ViewModels.StudentDetailsViewModel
+
+<section class="hero">
+    <div class="flex-container-column">
+        <h1>// @Model.Name</h1>
+        <div class="flex-object">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>&lt;Id&gt;</th>
+                        <th>&lt;Personnummer&gt;</th>
+                        <th>&lt;Namn&gt;</th>
+                        <th>&lt;Epost&gt;</th>
+                        <th>&lt;Address&gt;</th>
+                        <th>&lt;Telefonnummer&gt;</th>
+                        <th>&lt;Kurs&gt;</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>@Model.Id</td>
+                        <td>@Model.SocialSecurityNumber</td>
+                        <td>@Model.Name</td>
+                        <td>@Model.Email</td>
+                        <td>@Model.Address</td>
+                        <td>@Model.PhoneNumber</td>
+                        <td>@Model.Course</td>
+                        <td></td>
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <td>&nbsp;</td>
+                    <td>
+                        <a class="links" asp-action="index"><i id="arrow" class="fa-solid fa-arrow-left"></i></a>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</section>

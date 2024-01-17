@@ -1,0 +1,38 @@
+[
+  {
+    "Id": 1,
+    "CourseName": "Html Nybörjare",
+    "CourseTitle": "HTML0101",
+    "CourseNumber": "HTML0101VT23",
+    "StartDate": "2023-01-02",
+    "LengthInWeeks": 5,
+    "TeacherId": 1
+  },
+  {
+    "Id": 2,
+    "CourseName": "JavaScript Nybörjare",
+    "CourseTitle": "JAVASCRIPT0101",
+    "CourseNumber": "JS0101VT23",
+    "StartDate": "2023-01-02",
+    "LengthInWeeks": 5,
+    "TeacherId": 1
+  },
+  {
+    "Id": 3,
+    "CourseName": "CSS Nybörjare",
+    "CourseTitle": "CSS0101",
+    "CourseNumber": "CSS0101VT23",
+    "StartDate": "2023-01-02",
+    "LengthInWeeks": 5,
+    "TeacherId": 2
+  },
+  {
+    "Id": 4,
+    "CourseName": "Python Nybörjare",
+    "CourseTitle": "PYTHON0101",
+    "CourseNumber": "PY0101VT23",
+    "StartDate": "2023-01-02",
+    "LengthInWeeks": 5,
+    "TeacherId": 2
+  }
+]

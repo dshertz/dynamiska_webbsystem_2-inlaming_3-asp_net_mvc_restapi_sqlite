@@ -1,0 +1,18 @@
+[
+  {
+    "Id": 1,
+    "SocialSecurityNumber": 8003039876,
+    "Name": "Gösta Göstasson",
+    "Email": "gosta@mail.com",
+    "Address": "Göstas Gata 1, 12345 Göstastad",
+    "PhoneNumber": "070-123 45 67"
+  },
+  {
+    "Id": 2,
+    "SocialSecurityNumber": 8104045432,
+    "Name": "Berit Beritdotter",
+    "Email": "berit@mail.com",
+    "Address": "Berits Gata 1, 12345 Beritstad",
+    "PhoneNumber": "070-098 32 67"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "Id": 1,
+    "SocialSecurityNumber": 9001011234,
+    "Name": "Pelle Pellesson",
+    "Email": "pelle@mail.com",
+    "Address": "Pelles Gata 1, 12345 Pellestad",
+    "PhoneNumber": "070-123 45 67",
+    "CourseId": 1
+  },
+  {
+    "Id": 2,
+    "SocialSecurityNumber": 9102025678,
+    "Name": "Lisa Lisasdotter",
+    "Email": "lisas@mail.com",
+    "Address": "Lisas Gata 1, 12345 Lisastad",
+    "PhoneNumber": "070-654 43 21",
+    "CourseId": 2
+  },
+  {
+    "Id": 3,
+    "SocialSecurityNumber": 9003016789,
+    "Name": "Anna Annasdotter",
+    "Email": "annass@mail.com",
+    "Address": "Annas Gata 1, 12345 Annasstad",
+    "PhoneNumber": "070-087 76 56",
+    "CourseId": 2
+  },
+  {
+    "Id": 4,
+    "SocialSecurityNumber": 8904065678,
+    "Name": "Sven Svensson",
+    "Email": "svens@mail.com",
+    "Address": "Svens Gata 1, 12345 Svensstad",
+    "PhoneNumber": "070-978 56 98",
+    "CourseId": 1
+  }
+]
